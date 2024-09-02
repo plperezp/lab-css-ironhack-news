@@ -177,7 +177,7 @@ header {
 }
   
 /* Write your CSS below */
-
+/*MOBILE SCREEN*/
 @media (width < 760px){
 
 
@@ -186,12 +186,30 @@ header {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  justify-content: space-around;
+ 
 
+  }
+
+  .navbar li {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff;
+  
+    
   }
 .main-article{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.article {
+  width: 105%;
+  padding: 20px, 20px, 20px, 0px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
 }
 .articles-container{
   display: flex;
@@ -202,6 +220,40 @@ header {
  
 }
 
+}
+/*SMALL SCREEN */
+@media ((width>768px) and (width <1024px)){
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.navbar a {
+
+  text-align: center;
+  padding: 10px;
+}
+.navbar li{
+ flex-direction: row;
+ justify-content: space-between;
+ align-content: center;
+ align-items: center;
+ padding-left: 50px;
+ margin-left: 50px;
+}
+.main-article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+}
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 
